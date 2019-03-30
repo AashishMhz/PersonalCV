@@ -37,8 +37,19 @@ a {
 a:hover,
 a:visited,
 a:active {
-  color: #fff !important;
-  text-decoration: none !important;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  color:#fff;
+}
+
+.nav-item a:hover,
+.nav-item a:visited,
+.nav-item a:active {
+  color:#000;
 }
 
 img {
