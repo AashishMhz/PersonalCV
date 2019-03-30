@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+    .page .jumbotron {
+      padding: 120px 0;
+    }
+
+    .banner-detail {
+      text-align: center;
+    }
+
+    .banner-detail blockquote {
+      font-size: 18px;
+    }
+
+    .banner-detail h1 {
+      font-size: 25px;
+      margin-bottom: 45px;
+      text-align: center;
+    }
+
+    .banner-detail h1:first-letter {
+      font-size: 45px;
+      line-height: 45px;
+    }
+
+    .name h1 {
+      font-size: 55px;
+      line-height: 55px;
+      margin-left: 0;
+    }
+
+    .avatar {
+      background-size: contain;
+      position: absolute !important;
+      position: relative !important;
+      height: 500px;
+    }
+
+    .about-content {
+      padding: 10px;
+    }
+
+    .avatar:before {
+      content: "";
+      background: transparent;
+    }
+
+    .space {
+      margin-top: 15px;
+      padding: 25px 0;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .study-timeline:before {
+      background: transparent;
+    }
+
+    .study-timeline .row:nth-child(2n + 1)>div:nth-child(2n + 1):before {
+      right: 10px;
+    }
+
+    .study-timeline .row:nth-child(2n + 2)>div:nth-child(2n + 2) {
+      padding-left: 45px;
+    }
+
+    .study-timeline .row:nth-child(2n + 2)>div:nth-child(2n + 2):before {
+      left: 5px;
+
+    }
+  }

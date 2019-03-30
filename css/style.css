@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Mrs+Sheppards");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 56px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:visited,
+a:active {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.space {
+  margin-top: 75px;
+  padding: 45px 0;
+}
+
+.hamburger span {
+  cursor: pointer;
+  position: absolute;
+}
+
+.show-cls .show {
+  display: none;
+}
+.show-cls .close {
+  display: block;
+}
+
+header.header {
+  transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.banner-detail p {
+  padding-right: 85px;
+}
+
+.header.header.show-menu {
+  transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+}
+
+.contact-section form a {
+    background: -webkit-linear-gradient( rgba(241, 39, 17, 1), rgba(245, 175, 25, 1) );
+}
+
+.contact-section form a:hover {
+  background: -webkit-linear-gradient( rgba(245, 175, 25, 1), rgba(241, 39, 17, 1) );
+}
+
+.hamburger {
+  position: fixed;
+  right: 40px;
+  top: 15px;
+  z-index: 999;
+}
+
+.close {
+  display: none;
+}
+
+.page .jumbotron {
+  height: 100vh;
+  margin-bottom: 0;
+  padding: 200px 0;
+}
+
+.banner-detail h1 {
+  background: -webkit-linear-gradient(
+    rgba(241, 39, 17, 1),
+    rgba(245, 175, 25, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.banner-detail h1:first-letter {
+  font-family: "Mrs Sheppards", cursive;
+  font-size: 85px;
+  margin: 5px;
+  line-height: 85px;
+}
+
+.banner-detail blockquote {
+  font-size: 25px;
+  line-height: 25px;
+  padding-left: 55px;
+  margin: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.banner-detail blockquote:before {
+  content: "\f10e";
+  background: -webkit-linear-gradient(
+    rgba(241, 39, 17, 0.5),
+    rgba(245, 175, 25, 0.7)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: FontAwesome;
+  font-size: 55px;
+  left: 0;
+  line-height: 55px;
+  position: absolute;
+  top: -19px;
+}
+
+.button {
+  background: -webkit-linear-gradient(
+    rgba(241, 39, 17, 0.5),
+    rgba(245, 175, 25, 0.7)
+  );
+  border-radius: 25px;
+  -o-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  color: #333;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: -webkit-linear-gradient(
+    rgba(245, 175, 25, 0.7),
+    rgba(241, 39, 17, 0.5)
+  );
+}
+
+.about-wrapper {
+  position: relative;
+}
+
+.avatar {
+  background: url("../images/about.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+}
+
+.avatar:before {
+  background: linear-gradient(rgba(245, 175, 25, 0.7), rgba(241, 39, 17, 0.5));
+  content: "";
+  height: 90%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.about-content {
+  padding: 150px 50px;
+}
+
+.about-section,
+.qualification-section {
+  padding: 75px 0;
+  position: relative;
+  background: rgba(212, 210, 212, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(212, 210, 212, 1) 0%,
+    rgba(235, 228, 235, 0.69) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(212, 210, 212, 1)),
+    color-stop(100%, rgba(235, 228, 235, 0.69))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(212, 210, 212, 1) 0%,
+    rgba(235, 228, 235, 0.69) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(212, 210, 212, 1) 0%,
+    rgba(235, 228, 235, 0.69) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(212, 210, 212, 1) 0%,
+    rgba(235, 228, 235, 0.69) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(212, 210, 212, 1) 0%,
+    rgba(235, 228, 235, 0.69) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4d2d4', endColorstr='#ebe4eb', GradientType=1);
+}
+
+.name h1 {
+  color: rgba(242, 245, 248, 0.7);
+  font-size: 85px;
+  font-weight: 700;
+  margin-left: -305px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+.section--title h1 {
+  display: inline-block;
+  position: relative;
+}
+
+.section--title h1:before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  background: #f2f5f8;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border: 2px solid;
+  border-right: transparent;
+  border-left: transparent;
+  border-top-color: -webkit-linear-gradient(
+    rgba(245, 175, 25, 0.7),
+    rgba(241, 39, 17, 0.5)
+  );
+  border-bottom-color: -webkit-linear-gradient(
+    rgba(245, 175, 25, 0.7),
+    rgba(241, 39, 17, 0.5)
+  );
+}
+
+#about,
+#feature,
+.contact {
+  transition: 0.3s ease-in-out;
+}
+
+.entry-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header.header.show-menu {
+  background: #fff;
+}
+
+.entry--title .section--title {
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  margin: 20px auto;
+  width: 110px;
+}
+
+.card--thumbnail img {
+  height: 100px;
+  width: 100px;
+}
+
+.label {
+  color: #fff;
+  border-radius: 8px;
+  -o-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.label-primary {
+  background-color: #337ab7;
+}
+
+.label-success {
+  background-color: #5cb85c;
+}
+
+.label-info {
+  background-color: #5bc0de;
+}
+
+.label-warning {
+  background-color: #f0ad4e;
+}
+
+.label-danger {
+  background-color: #d9534f;
+}
+
+.personal-detail li {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.my-info span {
+  color: #adadad;
+}
+
+.section--title span {
+  background: -webkit-linear-gradient(
+    rgba(241, 39, 17, 1),
+    rgba(245, 175, 25, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-family: "Mrs Sheppards", cursive;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.study-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    rgba(241, 39, 17, 1),
+    rgba(245, 175, 25, 1)
+  );
+}
+
+.study-timeline {
+  position: relative;
+}
+
+.date {
+  background: -webkit-linear-gradient(
+    rgba(241, 39, 17, 0.5),
+    rgba(245, 175, 25, 0.7)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.study-timeline .row:nth-child(2n + 1) > div:nth-child(2n + 1) {
+  padding-right: 45px;
+  text-align: right;
+}
+
+.study-timeline .row:nth-child(2n + 2) > div:nth-child(2n + 2) .school {
+  float: left;
+}
+
+.school span {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.school {
+  max-width: 410px;
+  float: right;
+}
+
+.study-timeline .row:nth-child(2n + 1) > div:nth-child(2n + 1):before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -9px;
+  background: #8f939b;
+  content: "";
+  border-radius: 50%;
+  top: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 5px red;
+  box-shadow: 0 0 13px 0px #fff;
+}
+
+.study-timeline .row:nth-child(2n + 2) > div:nth-child(2n + 2) {
+  padding-left: 45px;
+}
+
+.study-timeline .row:nth-child(2n + 2) > div:nth-child(2n + 2):before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -6px;
+  background: #8f939b;
+  content: "";
+  border-radius: 50%;
+  top: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 5px red;
+  box-shadow: 0 0 13px 0px #fff;
+}
+
+/* footer */
+
+/********************\
+   #footer-section
+\********************/
+.footer-section {
+  padding: 60px 0;
+  padding-bottom: 0;
+}
+
+.bottom-footer {
+  text-align: center;
+  color: #ffffff;
+  background: #333333;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+.bottom-footer h1 {
+  font-size: 25px;
+}
+.bottom-footer li {
+  display: inline-block;
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.bottom-footer li:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px 2px rgba(255, 255, 255, 0.5);
+}
+.bottom-footer li:hover .fa {
+  color: #333333;
+}
+.bottom-footer .fa {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.contact-details {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact-details .fa {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 26px;
+  color: #333333;
+  line-height: 50px;
+  box-shadow: 0 0px 13px 4px rgba(255, 255, 255, 0.5);
+}
+
+.contact-section {
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(242, 245, 248, 0.35);
+  padding: 20px;
+}
+.contact-section h3 {
+  text-align: center;
+}
+.contact-section form {
+  margin-top: 30px;
+}
+.contact-section .input-field {
+  width: 50%;
+  float: left;
+}
+.contact-section .input-field input {
+  width: 100%;
+  height: 45px;
+  border-color: 1px solid #eceaea;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.contact-section textarea {
+  width: 100%;
+  height: 180px;
+  border: none;
+  padding: 10px;
+}
+
+.input-field.left-side {
+  padding-right: 20px;
+}
+
+.input-field.right-side {
+  padding-left: 20px;
+}
+
+.contact-section .button {
+  color: #fff;
+}
